@@ -3,17 +3,19 @@ Provide easy way to get node arguments
 
 ## Usage
 
-### CLI (node script.js --username root --password Qwerty123$)
+### CLI (node script.js -u root -p Qwerty123$ or node script.js --username root --password Qwerty123$)
 
 ```javascript
 //script.js
 import {get} from simple-nod-args
 
+const u = get('u');
+const p = get('p');
 const username = get('username');
 const password = get('password');
 
-console.log(username, password);
-//root Qwerty123$
+console.log(u, p, username, password);
+//root Qwerty123$ root Qwerty123$
 ```
 ### Browser (URL?username=root&password=Qwerty123$)
 
