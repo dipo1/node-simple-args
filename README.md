@@ -7,7 +7,7 @@ Provide easy way to get node arguments
 
 ```javascript
 //script.js
-import {get} from simple-nod-args
+import {get} from node-simple-args
 
 const u = get('u');
 const p = get('p');
@@ -20,7 +20,7 @@ console.log(u, p, username, password);
 ### Browser (URL?username=root&password=Qwerty123$)
 
 ```javascript
-import {getParam} from simple-nod-args
+import {getParam} from node-simple-args
 
 const username = getParam('username');
 const password = getParam('password');
